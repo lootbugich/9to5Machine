@@ -374,16 +374,31 @@ theme_override_fonts/font = ExtResource("3")
 theme_override_font_sizes/font_size = 32
 text = "Exit"
 
-[node name="Label" type="Label" parent="Camera3D/Control" unique_id=1831693425]
+[node name="Label2" type="Label" parent="Camera3D/Control" unique_id=2027185370]
 layout_mode = 0
-offset_left = 29.000004
-offset_top = -4.0
-offset_right = 461.0
-offset_bottom = 124.0
-scale = Vector2(0.61036015, 2.3928425)
+offset_left = 28.0
+offset_top = 108.0
+offset_right = 532.0
+offset_bottom = 236.0
+scale = Vector2(0.5733797, 0.8191187)
 theme_override_fonts/font = ExtResource("3")
 theme_override_font_sizes/font_size = 128
-text = "AIGANE"
+text = "MACHINE"
+
+[node name="Line2D" type="Line2D" parent="Camera3D/Control/Label2" unique_id=612826183]
+position = Vector2(48.429077, -108)
+scale = Vector2(1.4048443, 1)
+points = PackedVector2Array(4, 109, 273, 109)
+
+[node name="Label" type="Label" parent="Camera3D/Control/Label2" unique_id=1831693425]
+layout_mode = 0
+offset_left = 28.0
+offset_top = -110.0
+offset_right = 460.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+text = "9 TO 5"
 
 [node name="CreditsBG" type="Panel" parent="Camera3D/Control" unique_id=47440949]
 visible = false

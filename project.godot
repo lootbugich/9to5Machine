@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="AIGANE"
-run/main_scene="uid://7bs8jp4u0nfx"
+run/main_scene="uid://cncfb7w0ig3nb"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="uid://hykqkcmkkrlf"
