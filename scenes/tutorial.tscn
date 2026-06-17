@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://ca1h3frrfarpj"]
+
+[ext_resource type="Script" uid="uid://qm7s25rn4n6b" path="res://scripts/tutorial.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://dj20y46ex03wn" path="res://fonts/Perfect DOS VGA 437 Win.ttf" id="2"]
+[ext_resource type="Shader" uid="uid://ct2uwi7ljjo21" path="res://scripts/test_1.gdshader" id="3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6yjpi"]
+shader = ExtResource("3")
+shader_parameter/pixel_size = 2.10000001639132
+shader_parameter/dithering_enabled = true
+shader_parameter/dither_strength = 0.5
+shader_parameter/color_levels = 16
+shader_parameter/dither_matrix_size = 1
+shader_parameter/grayscale = false
+shader_parameter/brightness = 0.0
+shader_parameter/contrast = 1.0
+shader_parameter/saturation = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ph3nu"]
+bg_color = Color(1, 1, 1, 0.07058824)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kmhl"]
+bg_color = Color(1, 1, 1, 0.07058824)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[node name="Tutorial" type="Node2D" unique_id=1576454287]
+script = ExtResource("1")
+
+[node name="bg" type="ColorRect" parent="." unique_id=1572563393]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="start_label" type="RichTextLabel" parent="." unique_id=429463486]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 192.0
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Test"
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="button_desc_label" type="RichTextLabel" parent="." unique_id=158874673]
+offset_left = 664.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 592.0
+theme_override_fonts/normal_font = ExtResource("2")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="shader" type="ColorRect" parent="." unique_id=1888816090]
+material = SubResource("ShaderMaterial_6yjpi")
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+
+[node name="start_button" type="Button" parent="." unique_id=424687577]
+offset_left = 472.0
+offset_top = 224.0
+offset_right = 680.0
+offset_bottom = 416.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ph3nu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4kmhl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ph3nu")
+text = "Click to
+interact.
+Start tutorial."
+
+[node name="example_button" type="Button" parent="." unique_id=603980917]
+offset_left = 192.0
+offset_top = 96.0
+offset_right = 448.0
+offset_bottom = 544.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ph3nu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4kmhl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ph3nu")
+text = "Click to
+interact.
+Continue."
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="example_button" to="." method="_on_example_button_pressed"]

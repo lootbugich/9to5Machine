@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b6snnb5kmg0sv"]
+
+[ext_resource type="Texture2D" uid="uid://dwr32kr4mvn5w" path="res://textures/close.png" id="1_7b08y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_suyxu"]
+texture = ExtResource("1_7b08y")
+texture_margin_left = 17.0
+texture_margin_top = 17.0
+
+[node name="Close" type="Button" unique_id=1349299453]
+texture_filter = 1
+offset_left = 704.0
+offset_top = 192.0
+offset_right = 721.0
+offset_bottom = 209.0
+scale = Vector2(1.3888888, 1.4411764)
+theme_override_styles/normal = SubResource("StyleBoxTexture_suyxu")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_suyxu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_suyxu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_suyxu")

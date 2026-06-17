@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://bq3w8ochoxhhb"]
+
+[ext_resource type="Script" uid="uid://drkhbl2ckila" path="res://scripts/snake.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://qutju77cf5fe" path="res://textures/snake_head.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7magacl7tc4a" path="res://textures/snake_part.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://sk20qai8a7gr" path="res://textures/snake_food.png" id="4"]
+[ext_resource type="FontFile" uid="uid://dj20y46ex03wn" path="res://fonts/Perfect DOS VGA 437 Win.ttf" id="5"]
+
+[node name="snake" type="Control" unique_id=1632563182]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+head_texture = ExtResource("2")
+body_texture = ExtResource("3")
+food_texture = ExtResource("4")
+
+[node name="bg" type="ColorRect" parent="." unique_id=1417951418]
+layout_mode = 0
+offset_right = 600.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="playfield" type="Control" parent="." unique_id=60499207]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="head" type="TextureRect" parent="playfield" unique_id=572828127]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 216.0
+offset_right = 320.0
+offset_bottom = 256.0
+texture = ExtResource("2")
+
+[node name="food" type="TextureRect" parent="playfield" unique_id=1139408785]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4")
+
+[node name="segments" type="Control" parent="playfield" unique_id=789836648]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="movetimer" type="Timer" parent="." unique_id=1508012838]
+
+[node name="gameover" type="Label" parent="." unique_id=1739342119]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -116.0
+offset_right = 230.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 32
+text = "Game over!
+Press SPACE/ENTER to 
+Restart. Press ESC to exit."
+horizontal_alignment = 1
+
+[node name="score" type="Label" parent="." unique_id=303887239]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 32
+text = "Score:"

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bus0omwl1q8rm"]
+
+[ext_resource type="Script" uid="uid://dqq5oeoa7rdv2" path="res://scripts/doom.gd" id="2_uqgle"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_4vn3j"]
+
+[node name="doom" type="Control" unique_id=195010446]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -552.0
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="ColorRect" parent="." unique_id=1082085788]
+visible = false
+layout_mode = 0
+offset_right = 600.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Main" type="MarginContainer" parent="." unique_id=1987045865]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("2_uqgle")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Main" unique_id=1748630550]
+layout_mode = 2
+texture = SubResource("ImageTexture_4vn3j")
+expand_mode = 1
+stretch_mode = 5

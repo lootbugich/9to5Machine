@@ -1,0 +1,63 @@
+GDRE Tools v2.5.0
+Windows 10.0.22621, NVIDIA GeForce GTX 650, vulkan
+Opening file: D:/StorageB/InDevProjects/AIGANE_versions/0.1.1/aigane.pck
+Loaded 118 imported files
+Detected Engine Version: 4.6.3
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 243 files, no errors detected!
+Extracted 243 files, no errors detected!
+
+Exporting scenes...
+WARNING: Dependency res://models/paper_stack_0.png:res://.godot/imported/paper_stack_0.png-0a3dd69f00789888291eef9fd3a8c720.s3tc.ctex is not mapped to the same path: res://models/paper_stack_0.png (uid://cjyx5s1lcdm3r)
+   at: GLBExporterInstance::_load_deps (modules\gdsdecomp\exporters\scene_exporter.cpp:983)
+*** Exporting 5 scenes took 3.80s
+
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     11
+Failed scripts:                         0
+Imported resources for export session:  118
+Successfully converted:                 116
+Lossy:                                  50
+Rewrote metadata:                       95
+Non-importable conversions:             2
+Not converted:                          0
+Failed conversions:                     2
+-------------
+
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/IndustrialHorror_PS_like.fbx-0a8291af88557814a2ff48087a29985d.scn to res://.assets/models/IndustrialHorror_PS_like.glb
+res://.godot/imported/post_it.fbx-7ba6662554f102abb444a986c11da03a.scn to res://.assets/models/post_it.glb
+------
+
+Failed conversions:
+* res://models/paper_stack.glb
+  * Errors during rewriting import settings:
+  * Failed to set all external dependencies in GLTF export and/or import info. This scene may not be imported correctly upon re-import.
+  * Errors:
+    ** Errors during scene loading:
+    WARNING: Dependency res://models/paper_stack_0.png:res://.godot/imported/paper_stack_0.png-0a3dd69f00789888291eef9fd3a8c720.s3tc.ctex is not mapped to the same path: res://models/paper_stack_0.png (uid://cjyx5s1lcdm3r)
+       at: GLBExporterInstance::_load_deps (modules\gdsdecomp\exporters\scene_exporter.cpp:983)
+    ** Errors during import parameter setting:
+    Dependencies that were not set:
+      res://models/paper_stack_0.png
+
+* res://models/PSX_Buildings.fbx
+  * Errors during dependency resolution:
+  * Dependency res://textures/T_Buildings_Textures.png -> res://textures/T_Buildings_Textures.png does not exist.
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.6.3 to edit the project.
+
+*******************************************************************************
+

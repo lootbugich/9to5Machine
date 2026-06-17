@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cncfb7w0ig3nb"]
+
+[ext_resource type="Script" uid="uid://bwa3i3xdmt3ja" path="res://scripts/warning.gd" id="1_fgfcp"]
+[ext_resource type="FontFile" uid="uid://dj20y46ex03wn" path="res://fonts/Perfect DOS VGA 437 Win.ttf" id="2_i3rmn"]
+[ext_resource type="Shader" uid="uid://ct2uwi7ljjo21" path="res://scripts/test_1.gdshader" id="3_18pth"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i3rmn"]
+shader = ExtResource("3_18pth")
+shader_parameter/pixel_size = 2.10000001639132
+shader_parameter/dithering_enabled = true
+shader_parameter/dither_strength = 0.5
+shader_parameter/color_levels = 16
+shader_parameter/dither_matrix_size = 1
+shader_parameter/grayscale = false
+shader_parameter/brightness = 0.0
+shader_parameter/contrast = 1.0
+shader_parameter/saturation = 1.0
+
+[node name="warning" type="Node2D" unique_id=1576454287]
+script = ExtResource("1_fgfcp")
+
+[node name="bg" type="ColorRect" parent="." unique_id=1981843250]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="start_label" type="RichTextLabel" parent="." unique_id=429463486]
+offset_left = 64.0
+offset_top = 160.0
+offset_right = 1088.0
+offset_bottom = 544.0
+theme_override_fonts/normal_font = ExtResource("2_i3rmn")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "The game contains flashes and loud sounds. It is not recommended to close the game using ALT + F4; instead, use ESC.
+
+We also want to warn you that using languages ​​other than English may break the game. 
+
+Have a good game! =)"
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="press" type="RichTextLabel" parent="." unique_id=2063156529]
+offset_left = 64.0
+offset_top = 528.0
+offset_right = 1088.0
+offset_bottom = 584.0
+theme_override_fonts/normal_font = ExtResource("2_i3rmn")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Press ENTER to continue."
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="title" type="RichTextLabel" parent="." unique_id=1978911411]
+modulate = Color(1, 0, 0, 1)
+offset_left = 64.0
+offset_top = 48.0
+offset_right = 1088.0
+offset_bottom = 176.0
+theme_override_fonts/normal_font = ExtResource("2_i3rmn")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "! WARNING !"
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="shader" type="ColorRect" parent="." unique_id=1573114659]
+material = SubResource("ShaderMaterial_i3rmn")
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+
+[node name="bs" type="ColorRect" parent="." unique_id=957682563]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
