@@ -1,2 +1,3 @@
 res://scenes/menu.tscn
 res://other/new_gradient_texture_2d.tres
+res://scripts/movement.gd

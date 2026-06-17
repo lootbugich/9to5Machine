@@ -813,7 +813,7 @@ func _verify_report_and_schedule_callback():
 
     _save_last_test_result(true, "all data true.")
     _schedule_callback(sfx_result_correct)
-    if !is_task_completed("ai_master"):
+    if !is_task_completed("ai_master") and has_task("ai_master"):
             set_task_status("ai_master", true)
 
 func _save_last_test_result(success: bool, reason: String):
