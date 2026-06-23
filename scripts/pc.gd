@@ -611,7 +611,7 @@ func _execute_command(cmd: String):
                 plr.mess.display_text("[wave amp=25.0 freq=5.0 connected=1]Tasks have been updated. Check your tablet.[/wave]")
         "tests":
             if !plr.is_task_completed("ai_zero_steps") and plr.has_task("ai_zero_steps"):
-                plr.set_task_status("cmd_guide", true)
+                plr.set_task_status("ai_zero_steps", true)
                 plr.add_task("ai_first_steps", "Check A.I. models.")
                 plr.mess.display_text("[wave amp=25.0 freq=5.0 connected=1]Tasks have been updated. Check your tablet.[/wave]")
             output = "AVAILABLE TESTS:\n001 - Educational Test\n002 - Mathematics Test\n003 - Memory Test\n004 - Emotional Test"
