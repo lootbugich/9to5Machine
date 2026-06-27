@@ -59,6 +59,7 @@
 [ext_resource type="Texture2D" uid="uid://db5qc4nlleu72" path="res://textures/IMG_20221127_0001.png" id="54"]
 [ext_resource type="Texture2D" uid="uid://cf6whk30q5jwp" path="res://textures/moon.png" id="55"]
 [ext_resource type="Texture2D" uid="uid://b0gaon74ujjyp" path="res://textures/moon2.png" id="56"]
+[ext_resource type="PackedScene" path="res://levels/Untitled.tscn" id="60_yd4ix"]
 
 [sub_resource type="Environment" id="Environment_ryrav"]
 background_energy_multiplier = 0.12
@@ -1598,6 +1599,9 @@ shaded = true
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_3hbvx")
 frame_progress = 0.7226243
+
+[node name="Untitled" parent="." unique_id=1968413289 instance=ExtResource("60_yd4ix")]
+transform = Transform3D(-1.851871e-08, 0, 0.4236587, 0, 0.4236587, 0, -0.4236587, 0, -1.851871e-08, 0.4317131, -0.66145635, 1.8532815)
 
 [connection signal="pressed" from="Camera3D/hud/zone2" to="Camera3D" method="_on_zone_2_pressed"]
 [connection signal="pressed" from="Camera3D/hud/pc_power" to="Camera3D" method="_on_pc_power_pressed"]
