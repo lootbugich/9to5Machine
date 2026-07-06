@@ -1,2 +1,8 @@
-res://scenes/game.tscn
+res://scripts/menu.gd
+res://scenes/menu.tscn
 res://other/new_gradient_texture_2d.tres
+res://scenes/load.tscn
+res://scripts/ai_loading.gd
+res://scenes/game.tscn
+res://scripts/movement.gd
+res://scripts/game.gd

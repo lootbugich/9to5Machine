@@ -1,8 +1,10 @@
+Control
+Container
+VBoxContainer
 Line2D
 MarginContainer
 TextureRect
 ScrollContainer
-VBoxContainer
 GridContainer
 CanvasLayer
 AudioStreamPlayer2D

@@ -1,1 +1,2 @@
 *.TMP
+.godot/editor/filesystem_cache10

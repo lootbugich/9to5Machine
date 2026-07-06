@@ -1,7 +1,7 @@
 extends Node3D
 
 func _input(e):
-    var h = $Camera3D / hud / hint
+    var h = $Camera3D/hud/room01/hint
     if h.visible and e is InputEventMouseButton: get_viewport().set_input_as_handled()
     if h.visible and e.is_action_pressed("ui_cancel"):
         var t = create_tween()

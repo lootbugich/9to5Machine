@@ -22,38 +22,38 @@ extends Camera3D
 @onready var default_fov = fov
 
 @onready var fade_rect = $hud/black_screen
-@onready var btn_main = $hud/main
-@onready var btn_z1 = $hud/zone1
-@onready var btn_z2 = $hud/zone2
-@onready var btn_z1t2 = $hud/to_zone1
-@onready var btn_pc_power = $hud/pc_power
-@onready var btn_form_open = $hud/result_paper
-@onready var btn_help_open = $hud/help_paper
-@onready var btn_call_open = $hud/call
-@onready var btn_notepad = $hud/notepad
-@onready var btn_guide = $hud/guide_note
-@onready var btn_task = $hud/task
+@onready var btn_main = $hud/room01/main
+@onready var btn_z1 = $hud/room01/zone1
+@onready var btn_z2 = $hud/room01/zone2
+@onready var btn_z1t2 = $hud/room01/to_zone1
+@onready var btn_pc_power = $hud/room01/pc_power
+@onready var btn_form_open = $hud/room01/result_paper
+@onready var btn_help_open = $hud/room01/help_paper
+@onready var btn_call_open = $hud/room01/call
+@onready var btn_notepad = $hud/room01/notepad
+@onready var btn_guide = $hud/room01/guide_note
+@onready var btn_task = $hud/room01/task
 
-@onready var hint = $hud/guide_form
-@onready var form_panel = $hud/result_from
-@onready var help_panel = $hud/help_form
-@onready var call_panel = $hud/call_panel
-@onready var notepad_panel = $hud/notepad_form
-@onready var task_panel = $hud/task_panel
-@onready var phone_display = $hud/call_panel/display
-@onready var phone_audio = $hud/call_panel/phone_audio
-@onready var dial_audio = $hud/call_panel/dial_audio
+@onready var hint = $hud/room01/guide_form
+@onready var form_panel = $hud/room01/result_from
+@onready var help_panel = $hud/room01/help_form
+@onready var call_panel = $hud/room01/call_panel
+@onready var notepad_panel = $hud/room01/notepad_form
+@onready var task_panel = $hud/room01/task_panel
+@onready var phone_display = $hud/room01/call_panel/display
+@onready var phone_audio = $hud/room01/call_panel/phone_audio
+@onready var dial_audio = $hud/room01/call_panel/dial_audio
 
-@onready var tasks_container = $hud/task_panel/tasks
+@onready var tasks_container = $hud/room01/task_panel/tasks
 var all_tasks = {}
 
-@onready var cb1 = $hud/result_from/standard
-@onready var cb2 = $hud/result_from/nonstandard
-@onready var cb3 = $hud/result_from/success
-@onready var cb4 = $hud/result_from/fail
-@onready var le1 = $hud/result_from/ID
-@onready var le2 = $hud/result_from/MODEL
-@onready var le3 = $hud/result_from/SESSION
+@onready var cb1 = $hud/room01/result_from/standard
+@onready var cb2 = $hud/room01/result_from/nonstandard
+@onready var cb3 = $hud/room01/result_from/success
+@onready var cb4 = $hud/room01/result_from/fail
+@onready var le1 = $hud/room01/result_from/ID
+@onready var le2 = $hud/room01/result_from/MODEL
+@onready var le3 = $hud/room01/result_from/SESSION
 
 @onready var mess = $hud_static/task_mes
 
@@ -213,7 +213,7 @@ func _ready():
     for cb in [cb1, cb2, cb3, cb4]:
         if cb:
             cb.toggled.connect(_on_form_checkbox_toggled)
-    var note_text = get_node_or_null("hud/notepad_form/note ")
+    var note_text = get_node_or_null("hud/room01/notepad_form/note ")
     if note_text:
         note_text.text_changed.connect(_on_notepad_text_changed)
 
@@ -260,7 +260,7 @@ func _input(event):
         var is_any_panel_v = hint.visible or form_panel.visible or task_panel.visible or help_panel.visible or call_panel.visible or notepad_panel.visible
         if is_any_panel_v:
             if task_panel.visible:
-                if !$hud/task_panel/anim.is_playing():
+                if !$hud/room01/task_panel/anim.is_playing():
                     _on_task_close_pressed()
             else:
                 _force_close_panels()
@@ -845,7 +845,7 @@ func _print_last_test_result_on_start():
 
 func _on_task_pressed() -> void:
     btn_task.release_focus()
-    var anim = $hud/task_panel/anim
+    var anim = $hud/room01/task_panel/anim
     var opening = !task_panel.visible
     task_panel.visible = opening
     anim.play("RESET")
@@ -862,7 +862,7 @@ func _on_task_pressed() -> void:
     update_ui()
     
 func _on_task_close_pressed() -> void :
-    var anim = $hud/task_panel/anim
+    var anim = $hud/room01/task_panel/anim
     if task_panel.visible and not paper_sfx_player.playing:
         anim.play("down")
         _play_paper_down()

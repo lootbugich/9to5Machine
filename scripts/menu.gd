@@ -2,6 +2,8 @@ extends Node3D
 
 @onready var CPanel = get_node("/root/menu/Camera3D/Control/Credits")
 @onready var CPanelBG = get_node("/root/menu/Camera3D/Control/CreditsBG")
+@onready var IPanel = get_node("/root/menu/Camera3D/Control/Issues")
+@onready var IPanelBG = get_node("/root/menu/Camera3D/Control/IssuesBG")
 
 var model_selector: Control = null
 var model_checkboxes: Dictionary = {}
@@ -214,6 +216,6 @@ func _process(delta: float) -> void :
 func _on_exit_pressed() -> void :
     get_tree().quit()
 
-func _on_credits_pressed() -> void :
-    CPanel.visible = !CPanel.visible
-    CPanelBG.visible = !CPanelBG.visible
+func _on_issues_pressed() -> void :
+    IPanel.visible = !IPanel.visible
+    IPanelBG.visible = !IPanelBG.visible
