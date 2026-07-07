@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b2hbmdyq224ag"]
+
+[ext_resource type="Texture2D" uid="uid://b12p6n6xheel4" path="res://textures/Plaster_16-128x128.png" id="1_hdni6"]
+
+[resource]
+albedo_texture = ExtResource("1_hdni6")
+texture_filter = 0

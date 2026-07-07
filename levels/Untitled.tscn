@@ -1,4 +1,8 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://dhsuxsvc0aapn"]
+
+[ext_resource type="Texture2D" uid="uid://b12p6n6xheel4" path="res://textures/Plaster_16-128x128.png" id="1_7rvjm"]
+[ext_resource type="Material" uid="uid://l65dlonq17ne" path="res://other/wallpaper.tres" id="1_bhkkw"]
+[ext_resource type="Texture2D" uid="uid://k7ispsvlt3x8" path="res://textures/Plaster_02-128x128.png" id="3_m2n4r"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_aajob"]
 data = PackedVector3Array(-2.5, 0, -2.5, 2.5, 0, 2.5, -2.5, 0, 2.5, -2.5, 0, -2.5, 2.5, 0, -2.5, 2.5, 0, 2.5, -2.5, -0.19999999, -2.5, 2.5, -0.19999999, 2.5, 2.5, -0.19999999, -2.5, -2.5, -0.19999999, -2.5, -2.5, -0.19999999, 2.5, 2.5, -0.19999999, 2.5, -2.5, 0, -2.5, 2.5, -0.19999999, -2.5, 2.5, 0, -2.5, -2.5, 0, -2.5, -2.5, -0.19999999, -2.5, 2.5, -0.19999999, -2.5, 2.5, 0, 2.5, -2.5, -0.19999999, 2.5, -2.5, 0, 2.5, 2.5, 0, 2.5, 2.5, -0.19999999, 2.5, -2.5, -0.19999999, 2.5, -2.5, 0, 2.5, -2.5, -0.19999999, -2.5, -2.5, 0, -2.5, -2.5, 0, 2.5, -2.5, -0.19999999, 2.5, -2.5, -0.19999999, -2.5, 2.5, 0, -2.5, 2.5, -0.19999999, 2.5, 2.5, 0, 2.5, 2.5, 0, -2.5, 2.5, -0.19999999, -2.5, 2.5, -0.19999999, 2.5)
@@ -80,6 +84,12 @@ data = PackedVector3Array(-2.5, 0, 0.099999994, 2.5, 3, 0.099999994, 2.5, 0, 0.0
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8y6c0"]
 data = PackedVector3Array(-5, 0, 0.099999994, 5, 3, 0.099999994, 5, 0, 0.099999994, -5, 0, 0.099999994, -5, 3, 0.099999994, 5, 3, 0.099999994, 5, 0, -0.099999994, -5, 3, -0.099999994, -5, 0, -0.099999994, 5, 0, -0.099999994, 5, 3, -0.099999994, -5, 3, -0.099999994, -5, 3, 0.099999994, 5, 3, -0.099999994, 5, 3, 0.099999994, -5, 3, 0.099999994, -5, 3, -0.099999994, 5, 3, -0.099999994, -5, 0, -0.099999994, 5, 0, 0.099999994, 5, 0, -0.099999994, -5, 0, -0.099999994, -5, 0, 0.099999994, 5, 0, 0.099999994, -5, 0, -0.099999994, -5, 3, 0.099999994, -5, 0, 0.099999994, -5, 0, -0.099999994, -5, 3, -0.099999994, -5, 3, 0.099999994, 5, 0, 0.099999994, 5, 3, -0.099999994, 5, 0, -0.099999994, 5, 0, 0.099999994, 5, 3, 0.099999994, 5, 3, -0.099999994)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lvpg1"]
+albedo_texture = ExtResource("1_7rvjm")
+uv1_scale = Vector3(0.355, 0.355, 0.355)
+uv1_triplanar = true
+texture_filter = 0
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_3y12m"]
 _data = PackedByteArray("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")
@@ -1146,6 +1156,12 @@ data = PackedVector3Array(-2.5, 0, -2.5, 2.5, 0, 2.5, -2.5, 0, 2.5, -2.5, 0, -2.
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xqrfl"]
 data = PackedVector3Array(-1.5, 0, -2.5, 1.5, 0, 2.5, -1.5, 0, 2.5, -1.5, 0, -2.5, 1.5, 0, -2.5, 1.5, 0, 2.5, -1.5, -0.19999999, -2.5, 1.5, -0.19999999, 2.5, 1.5, -0.19999999, -2.5, -1.5, -0.19999999, -2.5, -1.5, -0.19999999, 2.5, 1.5, -0.19999999, 2.5, -1.5, 0, -2.5, 1.5, -0.19999999, -2.5, 1.5, 0, -2.5, -1.5, 0, -2.5, -1.5, -0.19999999, -2.5, 1.5, -0.19999999, -2.5, 1.5, 0, 2.5, -1.5, -0.19999999, 2.5, -1.5, 0, 2.5, 1.5, 0, 2.5, 1.5, -0.19999999, 2.5, -1.5, -0.19999999, 2.5, -1.5, 0, 2.5, -1.5, -0.19999999, -2.5, -1.5, 0, -2.5, -1.5, 0, 2.5, -1.5, -0.19999999, 2.5, -1.5, -0.19999999, -2.5, 1.5, 0, -2.5, 1.5, -0.19999999, 2.5, 1.5, 0, 2.5, 1.5, 0, -2.5, 1.5, -0.19999999, -2.5, 1.5, -0.19999999, 2.5)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1n65n"]
+albedo_texture = ExtResource("3_m2n4r")
+uv1_scale = Vector3(-0.665, -0.665, -0.665)
+uv1_triplanar = true
+texture_filter = 0
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_7oprb"]
 _surfaces = [{
 "aabb": AABB(-2.5, 0, -7.5, 5, 1e-05, 15),
@@ -1407,244 +1423,244 @@ _surfaces = [{
 [node name="FloorShape_00564402_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=251239425]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 13.5)
 shape = SubResource("ConcavePolygonShape3D_aajob")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_086064f9_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=198634276]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17, 0, 8.5)
 shape = SubResource("ConcavePolygonShape3D_ux645")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_18852542_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=2015555166]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0, 3.5)
 shape = SubResource("ConcavePolygonShape3D_cxvl2")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_2100290b_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=233914199]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.125, 0, 11)
 shape = SubResource("ConcavePolygonShape3D_f4gu8")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_224d44af_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=72709886]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 11)
 shape = SubResource("ConcavePolygonShape3D_fjut5")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_241bd457_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1526250095]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, -2)
 shape = SubResource("ConcavePolygonShape3D_151fs")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_308fa5ec_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=958108605]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5, 0, -6.5)
 shape = SubResource("ConcavePolygonShape3D_0hj7f")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_335a6c26_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=285903850]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, 13.5)
 shape = SubResource("ConcavePolygonShape3D_pe417")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_3f697ffb_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1417642338]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.5, 0, -9)
 shape = SubResource("ConcavePolygonShape3D_6pe0v")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_52b1ced1_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1876480507]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 3.5)
 shape = SubResource("ConcavePolygonShape3D_hhp7i")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_63d586f2_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1262526056]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -15, 0, 11)
 shape = SubResource("ConcavePolygonShape3D_cwtkv")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_654335f4_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1408230191]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13, 0, -2)
 shape = SubResource("ConcavePolygonShape3D_35fom")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_681b11da_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=971745799]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -10)
 shape = SubResource("ConcavePolygonShape3D_2jj5j")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_6bfb79d2_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1601902610]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 6)
 shape = SubResource("ConcavePolygonShape3D_4mvb4")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_6f7757cf_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1466793604]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -4)
 shape = SubResource("ConcavePolygonShape3D_kboqw")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_723ae337_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1375543792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 3.5)
 shape = SubResource("ConcavePolygonShape3D_k3732")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_761883d8_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1782887911]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -4)
 shape = SubResource("ConcavePolygonShape3D_8gbpy")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_89b5d26f_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=213928027]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -10.5, 0, 16)
 shape = SubResource("ConcavePolygonShape3D_0bl0n")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_8cd56118_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1970947304]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -2)
 shape = SubResource("ConcavePolygonShape3D_0txii")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_96e739ac_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1197898775]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -6.5)
 shape = SubResource("ConcavePolygonShape3D_t6kfn")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_b4d39954_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=2012697834]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13, 0, 13.5)
 shape = SubResource("ConcavePolygonShape3D_58ac3")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_c7b0f680_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=744814021]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 8.5)
 shape = SubResource("ConcavePolygonShape3D_tihrf")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_d72de7a5_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1313737459]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8.5)
 shape = SubResource("ConcavePolygonShape3D_377h6")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_dac0085c_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1980835155]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.125, 0, 11)
 shape = SubResource("ConcavePolygonShape3D_5lmxm")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_dad92f52_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=393273900]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 6)
 shape = SubResource("ConcavePolygonShape3D_17dql")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_ed24514e_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=482710882]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.5, 0, 1)
 shape = SubResource("ConcavePolygonShape3D_msxv3")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="WallShape_f1e4aca1_0" type="CollisionShape3D" parent="Storey_8e87c1a3/Collision_8e87c1a3" unique_id=1593316318]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3, 0, 1)
 shape = SubResource("ConcavePolygonShape3D_8y6c0")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="Floor_00564402" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=2090789346]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 13.5)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_lenv3")
 
 [node name="Wall_086064f9" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1736826719]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17, 0, 8.5)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_t556d")
 
 [node name="Wall_18852542" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1530504891]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0, 3.5)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_wgpa3")
 
 [node name="Wall_2100290b" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=599830101]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.125, 0, 11)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_w1pm0")
 
 [node name="Wall_224d44af" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1445988105]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 11)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_vky5e")
 
 [node name="Wall_241bd457" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=908130935]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, -2)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_hentx")
 
 [node name="Wall_308fa5ec" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1897967757]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5, 0, -6.5)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_11xm4")
 
 [node name="Wall_335a6c26" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1878822002]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, 13.5)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_45ndr")
 
 [node name="Wall_3f697ffb" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=811788747]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.5, 0, -9)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_gg5d4")
 
 [node name="Floor_52b1ced1" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=320284599]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 3.5)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_ios4i")
 
 [node name="Wall_63d586f2" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1188945734]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -15, 0, 11)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_18nvj")
 
 [node name="Wall_654335f4" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=362802389]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13, 0, -2)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_ltweg")
 
 [node name="Wall_681b11da" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=2089862158]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -10)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_u8g85")
 
 [node name="Wall_6bfb79d2" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=115605991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 6)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_qqt54")
 
 [node name="Wall_6f7757cf" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=2101381407]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -4)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_52dpa")
 
 [node name="Floor_723ae337" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=329480335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 3.5)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_yw76l")
 
 [node name="Wall_761883d8" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=962795194]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -4)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_mudm5")
 
 [node name="Wall_89b5d26f" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=870880507]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -10.5, 0, 16)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_2e7tn")
 
 [node name="Floor_8cd56118" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=234442202]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -2)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_nl6hs")
 
 [node name="Floor_96e739ac" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=919412449]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -6.5)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_cjjik")
 
 [node name="Wall_b4d39954" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=939275174]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13, 0, 13.5)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_yv77a")
 
 [node name="Floor_c7b0f680" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1587460126]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 8.5)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_3j4f6")
 
 [node name="Floor_d72de7a5" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=344577306]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8.5)
+material_override = SubResource("StandardMaterial3D_lvpg1")
 mesh = SubResource("ArrayMesh_wy3uv")
 
 [node name="Wall_dac0085c" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1277776108]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.125, 0, 11)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_fbw1v")
 
 [node name="Wall_dad92f52" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1197123789]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 6)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_rp7yn")
 
 [node name="Wall_ed24514e" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1558741644]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.5, 0, 1)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_hixu6")
 
 [node name="Wall_f1e4aca1" type="MeshInstance3D" parent="Storey_8e87c1a3" unique_id=1282929387]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3, 0, 1)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_odqbj")
 
 [node name="Storey_89b710b9" type="Node3D" parent="." unique_id=2046572792]
@@ -1655,64 +1671,64 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 [node name="FloorShape_4a949daa_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=594275415]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 3.5)
 shape = SubResource("ConcavePolygonShape3D_7lawg")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_95bb7c88_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=1838265364]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -2)
 shape = SubResource("ConcavePolygonShape3D_7qxvg")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_98b86f6b_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=313461431]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 8.5)
 shape = SubResource("ConcavePolygonShape3D_ejdyn")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_b0176cb0_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=2072260471]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 8.5)
 shape = SubResource("ConcavePolygonShape3D_vlkd5")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_b5a71f14_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=210273383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 11)
 shape = SubResource("ConcavePolygonShape3D_s37us")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_c00b0c0f_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=691971689]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 3.5)
 shape = SubResource("ConcavePolygonShape3D_vrfhu")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="FloorShape_cd13fe1a_0" type="CollisionShape3D" parent="Storey_89b710b9/Collision_89b710b9" unique_id=1123879708]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -6.5)
 shape = SubResource("ConcavePolygonShape3D_xqrfl")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="Floor_4a949daa" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=1808770121]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 3.5)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_7oprb")
 
 [node name="Floor_95bb7c88" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=101046906]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -2)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_6po0l")
 
 [node name="Floor_98b86f6b" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=1863963410]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 8.5)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_35wfk")
 
 [node name="Floor_b0176cb0" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=665465479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 8.5)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_geri4")
 
 [node name="Floor_b5a71f14" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=1788233018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 11)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_3yqgh")
 
 [node name="Floor_c00b0c0f" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=2093134381]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 3.5)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_mx8rp")
 
 [node name="Floor_cd13fe1a" type="MeshInstance3D" parent="Storey_89b710b9" unique_id=1764638298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -6.5)
+material_override = SubResource("StandardMaterial3D_1n65n")
 mesh = SubResource("ArrayMesh_ub47d")
 
 [node name="Storey_dca359f8" type="Node3D" parent="." unique_id=2012853869]
@@ -1723,8 +1739,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 [node name="WallShape_6e10fa94_0" type="CollisionShape3D" parent="Storey_dca359f8/Collision_dca359f8" unique_id=1134007948]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.125, 0, 11)
 shape = SubResource("ConcavePolygonShape3D_sufwe")
-debug_color = Color(0, 0.6, 0.7, 0.42)
 
 [node name="Wall_6e10fa94" type="MeshInstance3D" parent="Storey_dca359f8" unique_id=140013214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.125, 0, 11)
+material_override = ExtResource("1_bhkkw")
 mesh = SubResource("ArrayMesh_0jrps")

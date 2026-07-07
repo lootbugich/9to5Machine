@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://l65dlonq17ne"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vrtub"]
+load_path = "res://.godot/imported/wall01.png-1c12843432d913f948fa7c92c25c987a.s3tc.ctex"
+
+[resource]
+albedo_texture = SubResource("CompressedTexture2D_vrtub")
+uv1_scale = Vector3(0.24, 0.24, 0.24)
+uv1_offset = Vector3(0.675, 1.08, 0)
+uv1_triplanar = true
+texture_filter = 0

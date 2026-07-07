@@ -6,3 +6,7 @@ res://scripts/ai_loading.gd
 res://scenes/game.tscn
 res://scripts/movement.gd
 res://scripts/game.gd
+res://levels/Untitled.tscn
+res://other/wallpaper.tres
+res://other/potolok.tres
+res://scenes/doom.tscn
